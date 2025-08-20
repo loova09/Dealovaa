@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Loopa's Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fcefee 0%, #e8f0fe 100%);
+      color: #444;
+    }
+    nav {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-radius: 0 0 20px 20px;
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #555;
+      transition: 0.3s;
+      padding: 6px 12px;
+      border-radius: 12px;
+    }
+    nav a:hover {
+      background: #ffd6e8;
+      color: #b84c74;
+    }
+    section {
+      min-height: 100vh;
+      display: none;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+    section.active {
+      display: block;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    p {
+      max-width: 650px;
+      margin: 0 auto 20px;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    .social a {
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .social a.instagram { color: #E97171; }
+    .social a.spotify { color: #55D6A0; }
+    .social a:hover {
+      opacity: 0.7;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(255,255,255,0.7);
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+      color: #666;
+      border-radius: 20px 20px 0 0;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#" data-page="home">Home</a>
+    <a href="#" data-page="profile">Profile</a>
+    <a href="#" data-page="about">About Me</a>
+    <a href="#" data-page="artikel">Artikel</a>
+  </nav>
+
+  <!-- Home Page -->
+  <section id="home" class="active">
+    <h1>Welcome to Loova Website 🌷</h1>
+    <p>Hi, Explore menu di atas untuk kenalan lebih dekat! </p>
+  </section>
+
+  <!-- Profile Page -->
+  <section id="profile">
+    <h1>Profile</h1>
+    <p><b>Nama:</b> Lovaaaa</p>
+    <p><b>Umur:</b> 16</p>
+    <p><b>Kelas:</b> XI PPLG 2</p>
+    <p><b>Hobi:</b> tidur HEHEHE</p>
+    <div class="social">
+      <a href="https://www.instagram.com/daelovv?igsh=MTQ5aTA0dWp1OXk0MQ==" target="_blank" class="instagram">Instagram</a>
+
+    <a href="https://open.spotify.com/user/31dsgds645vjbox7ddt53vlqozvu?si=CQ-59k7dQ-GEQpAVIomVhg" target="_blank" class="spotify">Spotify</a>
+
+    </div>
+  </section>
+
+  <!-- About Page -->
+  <section id="about">
+    <h1>About Me</h1>
+    <p> Its me lovaa! suka belajar hal baru, eksplorasi ide, dan bikin sesuatu yang kreatif.
+    (bareng chatgpt) HAHAHAHA
+  </p>
+  </section>
+
+  <!-- Artikel Page -->
+  <section id="artikel">
+    <h1>Artikel</h1>
+    <p>Apa itu Bahasa Pemrograman?
+Bahasa pemrograman adalah bahasa buatan untuk menuliskan instruksi yang bisa dimengerti dan dijalankan oleh komputer. Penulisan dilakukan dengan sintaks (aturan penulisan) sehingga kode lebih mudah dipahami dan bebas dari ambiguitas—beda dengan bahasa manusia. 
+
+Cara Jalannya Komputer Eksekusi Kode
+
+Ada dua cara umum:
+
+Kompilasi (Compile): Kode diubah ke kode mesin (machine code) sebelum dijalankan.
+
+Interpretasi (Interpret): Kode langsung dieksekusi baris per baris oleh interpreter.
+
+Beberapa bahasa pakai strategi hybrid seperti Just-In-Time (JIT) atau bytecode interpreter. 
+Jenis-Jenis Bahasa Pemrograman
+
+Menurut sifat dan gaya pemrogramannya:
+
+Prosedural (Contoh: C, COBOL, BASIC, Pascal) – eksekusi dengan langkah demi langkah. 
+Encyclopedia Britannica
+
+Fungsional (Contoh: Lisp) – fokus pada fungsi matematika. 
+
+Berorientasi Objek (OOP) – menggunakan objek yang menyimpan data dan fungsi. Banyak digunakan karena bisa memodelkan hal kompleks dengan lebih natural. 
+
+Bahasa Pemrograman Paling Dikenal & Digunakan Saat Ini
+
+Menurut banyak sumber terkini:
+
+Python, JavaScript, Java – masih jadi favorit untuk web, data science, dan enterprise. 
+Simplilearn.com
+
+Go & Rust – semakin naik daun karena kecepatan dan keamanannya, cocok untuk backend dan sistem modern.
+
+Swift & Kotlin – penting untuk pengembangan aplikasi mobile. 
+
+SQL – bahasa khusus untuk operasi database. 
+Business Insider
+
+Tren Industri & Perspektif:
+
+Dalam dunia finansial (Wall Street), C++ masih dicari untuk trading berkecepatan tinggi, sedangkan Python populer untuk visualisasi dan analisis data. 
+
+JavaScript terus merajai dunia frontend selama lebih dari 10 tahun berkat ekosistemnya yang besar dan kemudahan belajar. 
+
+Bahasa Go dikagumi karena efisiensi dan pendekatan sederhana—dibuat oleh Google untuk jadi bahasa “C di abad ke-21”. 
+
+Ringkasan Singkat (Bullet):
+
+Bahasa pemrograman memungkinkan manusia “berbicara” dengan komputer
+
+Bisa diinterpretasi, dikompilasi, atau hybrid
+
+Tipe: Prosedural, Fungsional, OOP, Markup, dsb.
+
+Populer: Python, JavaScript, Java; naik: Go, Rust; tentu juga mobile & SQL
+
+Industri bahkan masih pakai C++—terutama untuk hal-hal yang butuh kecepatan.
+
+<p>Sumber:
+
+Wikipedia – Programming Language
+
+Encyclopedia Britannica – Computer Programming Language
+
+LaunchCode – Programming Languages
+
+Fullstack Academy – Best Programming Languages
+
+Simplilearn – Best Programming Languages
+
+ComputerScience.org – Programming Languages
+
+Business Insider – Top Programming Languages on Wall Street
+
+WIRED – Why Python, JavaScript, Go, and More
+
+</p>
+    
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Lovaa | Made with love
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(pageId).classList.add("active");
+    }
+
+    document.querySelectorAll("[data-page]").forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const page = this.getAttribute("data-page");
+        showPage(page);
+      });
+    });
+  </script>
+
+</body>
+</html>
